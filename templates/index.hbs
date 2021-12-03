@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/images/weather.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h1>welcome home {{name}}</h1>
+        <p>this is the weather page: </p>
+        <form>
+            <input type="text">
+             <button type="submit">Search</button>
+        </form>
+        <p id="weather-forecast"></p>
+        <p id="error"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/script.js"></script>
+</body>
+</html>
